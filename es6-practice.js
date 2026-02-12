@@ -16,7 +16,7 @@ console.log(first, rest); //first -> 1  res -> [2,3,4]
 
 // 1.4 object destructuring
 const user = { name: "Aman", age: 22 };
-const { name, age } = user; //name and age destructured from an object
+const { name, age } = user; //name and age assigned to variables from an object
 console.log(name, age);
 
 //1.5 Swapping elements
