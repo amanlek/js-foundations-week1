@@ -74,6 +74,8 @@ array by computing some operations ont each element of array*/
 
 //--------chained operation 
 const totalSalaryActive = users.filter((user) => user.active).map((user) => user.salary).reduce((res, curr)=> res + curr);
+//here we calculated the total salary of active members only, first we filtered out active users and
+//then used map function to just include salary of active users and then used reduce method to count total salary
 console.log(totalSalaryActive);
 
 //--------object operations:
