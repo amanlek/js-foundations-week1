@@ -58,10 +58,11 @@
   Shallow Copy: A shallow copy copies only the top-level properties of an object. If the object has nested objects, they share the same reference.
     *Uses less memory
     *Nested objects are NOT copied
-    *Changes in nested data affect the original object
+    *Changes in nested data affect the original object.
+	
   Deep Copy: A deep copy copies all levels of an object, including nested objects. No shared references exist. 
     *Completely independent copy
     *Safe for nested objects
-    *Uses more memory
+    *Uses more memory.
     
   
