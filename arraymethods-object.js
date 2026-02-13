@@ -21,11 +21,6 @@ const users = [
  {id:20,name:"Simran",role:"Manager",active:false,salary:98000,address:{city:"Gurgaon",state:"HR"}}
 ];
 
-const ab = {...users[0]};
-ab.address.city="Mumbai";
-ab.name = "amvc";
-console.log(ab);
-console.log(users[0]);
 
 
 
