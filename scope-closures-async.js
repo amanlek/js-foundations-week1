@@ -3,7 +3,6 @@
 * @param initialValue - initial value of counter
 * @returns function that increments and returns the counter value
 */
-
 const createCounter = (initialValue =0) =>{
     let count = initialValue;  // This variable belongs to createCounter's lexical scope. It is not accessible from outside
 
@@ -15,6 +14,7 @@ const createCounter = (initialValue =0) =>{
 const counter = createCounter(0);
 console.log(counter()); //1
 console.log(counter()); //2
+
 
 
 /**
@@ -59,8 +59,6 @@ const fetchTodo = () => {
       console.log('Fetch request completed');
     });
 };
-
-// Usage
 fetchTodo();
 
 
@@ -79,10 +77,9 @@ const fetchTodoAsync = async() => {
         if (!res.ok) {
             throw new Error('Async Network error');
         }
-        const data = await res.json();
+        const data = await res.json();              //async operation to extracting data from the response
         console.log("(async-await) title: ", data.title);
     }
-
     // Handles network errors
     catch(error) { 
       console.error('(async-await) Error fetching data:', error.message);   
