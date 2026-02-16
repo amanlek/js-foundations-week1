@@ -65,4 +65,18 @@
     *Safe for nested objects
     *Uses more memory.
     
-  
+**difference between Promise chaining and async/await.**
+->   Promise chaining                     async/await
+
+  	uses, .then() / .catch()	          async / await
+    Callback-based chaining	            Synchronous-looking
+    Error handling .catch()             try / catch
+
+**Stale Closure Problem**
+->
+  A stale closure happens when a function captures an old (outdated) value of a variable and keeps using it even after the variable has changed.
+  This occurs because:
+    -Closures capture variables at the time the function is created
+    -The function continues to reference that old value
+
+  In JavaScript, closures capture variables by reference, so they see updated values. Stale closures typically occur in frameworks like React where state values are snapshotted per render.
