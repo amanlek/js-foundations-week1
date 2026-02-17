@@ -1,0 +1,18 @@
+{
+  "name": "nodejs-modular-architecture-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "time": "node -e \"console.log(new Date().toLocaleTimeString())\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^5.3.0",
+    "uuid": "^9.0.1"
+  }
+}

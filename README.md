@@ -65,12 +65,14 @@
     *Safe for nested objects
     *Uses more memory.
     
+
 **difference between Promise chaining and async/await.**
 ->   Promise chaining                     async/await
 
   	uses, .then() / .catch()	          async / await
     Callback-based chaining	            Synchronous-looking
     Error handling .catch()             try / catch
+
 
 **Stale Closure Problem**
 ->
@@ -80,3 +82,43 @@
     -The function continues to reference that old value
 
   In JavaScript, closures capture variables by reference, so they see updated values. Stale closures typically occur in frameworks like React where state values are snapshotted per render.
+
+
+**How Event Loop handles Asynchronous Code**
+->
+  JavaScript is single-threaded and executes code using a call stack.
+  Asynchronous operations (such as setTimeout, API calls, and Promises) are handled by Web APIs.
+
+  -Once an asynchronous task completes, its callback is placed in the task queue.  
+  -The Event Loop continuously checks whether the call stack is empty.
+  -When the stack is empty, the Event Loop moves callbacks from the task queue to the call stack for execution.
+  
+  This process allows JavaScript to handle asynchronous tasks without blocking the main thread.
+
+
+**package.json uses**
+->
+  It contains project metadata such as name, version, and description.
+  It defines scripts used to run tasks like starting or building the project.
+  It manages project dependencies and devDependencies.
+  It helps maintain consistency when installing packages across different environments.
+
+
+**difference between named and default exports**
+->
+  Named exports
+    Allow exporting multiple values from a single file.
+    Must be imported using the exact same name inside curly braces.
+    Example:
+      export const add = (a, b) => a + b;
+
+  Default exports
+    Allow exporting one main value from a file.
+    Can be imported using any name.
+    Example:
+      export default function multiply(a, b) {
+        return a * b;
+      }
+  
+  Use named exports when a module provides multiple utilities.
+  Use default exports when a module has a single primary responsibility.

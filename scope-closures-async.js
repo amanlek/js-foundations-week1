@@ -82,7 +82,7 @@ const fetchTodoAsync = async() => {
     }
     // Handles network errors
     catch(error) { 
-      console.error('(async-await) Error fetching data:', error.message);   
+      console.error('(async-await) Error fetching data:', error.message);
     }
     finally{
       console.log('Async Fetch request completed');
