@@ -1,4 +1,3 @@
-// src/index.js
 import chalk from "chalk";
 
 import getCurrentTime, { generateId, capitalize } from "./utils.js";
