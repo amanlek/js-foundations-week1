@@ -139,3 +139,12 @@
       State is preserved
 
 
+**development build vs production build**
+->
+  Aspect  	      Development Build	      Production Build
+  File structure	Uses src/ files	        Uses dist/ output
+  Bundling	      No	                    Yes
+  Minification    No	                    Yes
+  File names	    Simple	                Hashed
+  File size	      Larger	                Smaller
+  Readable code	  Yes	                    No    
