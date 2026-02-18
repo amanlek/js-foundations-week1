@@ -122,3 +122,20 @@
   
   Use named exports when a module provides multiple utilities.
   Use default exports when a module has a single primary responsibility.
+
+
+**How HMR gets enabled**
+->
+  1. Vite Dev Server Starts:
+      Vite starts a development server
+      WebSocket connection is opened between browser & server
+  2. File Change Detection: When you edit app.jsx,
+      Vite, Detects the file change
+      Rebuilds only that module
+      Sends update to browser via WebSocket
+  3. Browser Applies Update
+      React component updates
+      Page does not reload
+      State is preserved
+
+
