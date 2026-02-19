@@ -147,4 +147,15 @@
   Minification    No	                    Yes
   File names	    Simple	                Hashed
   File size	      Larger	                Smaller
-  Readable code	  Yes	                    No    
+  Readable code	  Yes	                    No  
+
+
+**React Working**
+->  
+  1. You write JSX
+  2. JSX becomes JavaScript objects
+  3. React builds a Virtual DOM
+  4. React compares old vs new Virtual DOM (diffing)
+  5. Only changed parts update the real DOM
+
+
