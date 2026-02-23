@@ -1,6 +1,6 @@
 import TaskItem from "./TaskItem";
-import { Layout } from 'antd';
-const {Content} = Layout;
+import { Layout } from "antd";
+const { Content } = Layout;
 
 /**
  * TaskList component.
@@ -14,17 +14,22 @@ const {Content} = Layout;
  * @param {(id: number) => void} props.onToggleTask
  *        Function passed from App to toggle task completion
  */
-const TaskList = ({tasks, onToggleTask})=>{
-    return (
-        <>
-        <strong style={{ fontSize: "16px" }}>Courses:</strong>
-        <ul >
-            {tasks.map((task)=>(
-                <TaskItem key = {task.id} title={task.title} completed={task.completed} onToggle={()=>onToggleTask(task.id)}/>
-            ))}
-        </ul>
-        </>
-    )
-}
+const TaskList = ({ tasks, onToggleTask }) => {
+  return (
+    <>
+      <strong style={{ fontSize: "16px" }}>Courses:</strong>
+      <ul>
+        {tasks.map((task) => (
+          <TaskItem
+            key={task.id}
+            title={task.title}
+            completed={task.completed}
+            onToggle={() => onToggleTask(task.id)}
+          />
+        ))}
+      </ul>
+    </>
+  );
+};
 
 export default TaskList;
