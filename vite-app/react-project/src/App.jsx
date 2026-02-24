@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TaskItemApp from "./components/TaskItem/TaskItemApp";
-import ToDoApp from "./components/to-do/ToDoApp";
+import TodoClassComponent from "./components/to-do/TodoClassComponent";
 
 const App = () => {
   const [showTaskApp, setShowTaskApp] = useState(false);
@@ -24,7 +24,7 @@ const App = () => {
 </div>
       {/*Rendering */}
       {showTaskApp ? <TaskItemApp /> : null}
-      {showToDoApp ? <ToDoApp /> : null}
+      {showToDoApp ? <TodoClassComponent/> : null}
     
     </>
   );
